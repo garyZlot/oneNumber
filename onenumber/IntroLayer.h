@@ -9,7 +9,6 @@
 
 // HelloWorldLayer
 
-#import "ShareViewController.h"
 
 @interface IntroLayer : CCLayer
 {
