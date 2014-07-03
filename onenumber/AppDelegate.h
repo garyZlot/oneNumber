@@ -7,6 +7,9 @@
 //
 
 // Added only for iOS 6 support
+
+#import <UIKit/UIKit.h>
+
 @interface MyNavigationController : UINavigationController <CCDirectorDelegate>
 @end
 

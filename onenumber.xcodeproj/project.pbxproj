@@ -245,6 +245,11 @@
 		CBB9A57E1931CCDF002DDB17 /* purchase_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB9A57C1931CCDF002DDB17 /* purchase_bg.png */; };
 		CBB9A5811931CCEE002DDB17 /* closebtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB9A57F1931CCEE002DDB17 /* closebtn@2x.png */; };
 		CBB9A5821931CCEE002DDB17 /* purchase_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB9A5801931CCEE002DDB17 /* purchase_bg@2x.png */; };
+		CBCA4C15196413F40006ACCD /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCA4C14196413F40006ACCD /* ShareViewController.m */; };
+		CBCA4C91196501440006ACCD /* sharebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA4C90196501440006ACCD /* sharebtn.png */; };
+		CBCA4C93196501570006ACCD /* sharebtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA4C92196501570006ACCD /* sharebtn@2x.png */; };
+		CBCA4C95196504690006ACCD /* ratebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA4C94196504690006ACCD /* ratebtn.png */; };
+		CBCA4C971965047A0006ACCD /* ratebtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCA4C961965047A0006ACCD /* ratebtn@2x.png */; };
 		CBFF52A119331AFE008C6F55 /* PurchaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFF52A019331AFE008C6F55 /* PurchaseLayer.m */; };
 		CBFF52A3193322FF008C6F55 /* packagebtn_selbg.png in Resources */ = {isa = PBXBuildFile; fileRef = CBFF52A2193322FF008C6F55 /* packagebtn_selbg.png */; };
 		CBFF52A51933230C008C6F55 /* packagebtn_selbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBFF52A41933230C008C6F55 /* packagebtn_selbg@2x.png */; };
@@ -651,6 +656,13 @@
 		CBB9A57C1931CCDF002DDB17 /* purchase_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purchase_bg.png; sourceTree = "<group>"; };
 		CBB9A57F1931CCEE002DDB17 /* closebtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closebtn@2x.png"; sourceTree = "<group>"; };
 		CBB9A5801931CCEE002DDB17 /* purchase_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchase_bg@2x.png"; sourceTree = "<group>"; };
+		CBCA4C13196413F40006ACCD /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		CBCA4C14196413F40006ACCD /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		CBCA4C1619643E3F0006ACCD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CBCA4C90196501440006ACCD /* sharebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharebtn.png; sourceTree = "<group>"; };
+		CBCA4C92196501570006ACCD /* sharebtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sharebtn@2x.png"; sourceTree = "<group>"; };
+		CBCA4C94196504690006ACCD /* ratebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ratebtn.png; sourceTree = "<group>"; };
+		CBCA4C961965047A0006ACCD /* ratebtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ratebtn@2x.png"; sourceTree = "<group>"; };
 		CBFF529F19331AFE008C6F55 /* PurchaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseLayer.h; sourceTree = "<group>"; };
 		CBFF52A019331AFE008C6F55 /* PurchaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseLayer.m; sourceTree = "<group>"; };
 		CBFF52A2193322FF008C6F55 /* packagebtn_selbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = packagebtn_selbg.png; sourceTree = "<group>"; };
@@ -707,6 +719,7 @@
 		CBB9A30119301B6B002DDB17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBCA4C1619643E3F0006ACCD /* Social.framework */,
 				CB5945CD1935566600BF9405 /* SystemConfiguration.framework */,
 				CB5945C819349E7000BF9405 /* StoreKit.framework */,
 				CBB9A30219301B6B002DDB17 /* QuartzCore.framework */,
@@ -752,6 +765,8 @@
 				CB7707561932166700A395B7 /* CommonUtils.m */,
 				CBFF529F19331AFE008C6F55 /* PurchaseLayer.h */,
 				CBFF52A019331AFE008C6F55 /* PurchaseLayer.m */,
+				CBCA4C13196413F40006ACCD /* ShareViewController.h */,
+				CBCA4C14196413F40006ACCD /* ShareViewController.m */,
 			);
 			path = onenumber;
 			sourceTree = "<group>";
@@ -1149,6 +1164,8 @@
 		CBB9A4C419301CC6002DDB17 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CBCA4C94196504690006ACCD /* ratebtn.png */,
+				CBCA4C90196501440006ACCD /* sharebtn.png */,
 				CB52A00D193F6A7600D08B11 /* main_bg_35.png */,
 				CB52A009193F61D800D08B11 /* nav_bg_35.png */,
 				CB52A005193F60B700D08B11 /* setting_bg_35.png */,
@@ -1201,6 +1218,8 @@
 		CBB9A4C519301CC6002DDB17 /* 2x */ = {
 			isa = PBXGroup;
 			children = (
+				CBCA4C961965047A0006ACCD /* ratebtn@2x.png */,
+				CBCA4C92196501570006ACCD /* sharebtn@2x.png */,
 				CB819FB81941C76700CB230B /* help_bg@2x.png */,
 				CB52A00F193F6A8500D08B11 /* main_bg_35@2x.png */,
 				CB52A00B193F61E800D08B11 /* nav_bg_35@2x.png */,
@@ -1310,6 +1329,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = CBB9A2F619301B6B002DDB17;
 			productRefGroup = CBB9A30019301B6B002DDB17 /* Products */;
@@ -1347,12 +1367,15 @@
 				CBB9A53E1930227F002DDB17 /* success_bg.png in Resources */,
 				CBB9A4FF19301CC6002DDB17 /* finger@2x.png in Resources */,
 				CBB9A50B19301CC6002DDB17 /* star0@2x.png in Resources */,
+				CBCA4C91196501440006ACCD /* sharebtn.png in Resources */,
 				CBB9A4FD19301CC6002DDB17 /* easybtn@2x.png in Resources */,
 				CBFF52B119332AA8008C6F55 /* packagebtn_lock_selbg@2x.png in Resources */,
 				CBB9A4FC19301CC6002DDB17 /* block@2x.png in Resources */,
 				CB52A00C193F61E800D08B11 /* nav_bg_35@2x.png in Resources */,
 				CBB2C40D193B5C1400BAAEA4 /* help_bg.png in Resources */,
+				CBCA4C95196504690006ACCD /* ratebtn.png in Resources */,
 				CB819FAD1941BD2900CB230B /* AppIcon50x50.png in Resources */,
+				CBCA4C971965047A0006ACCD /* ratebtn@2x.png in Resources */,
 				CB819FAA1941BD2900CB230B /* AppIcon29x29@2x.png in Resources */,
 				CBB9A50F19301CC6002DDB17 /* starterbtn@2x.png in Resources */,
 				CB819FB31941BD2900CB230B /* AppIcon72x72@2x.png in Resources */,
@@ -1384,6 +1407,7 @@
 				CBB9A51C19301CC6002DDB17 /* hint_off.png in Resources */,
 				CBB9A52419301CC6002DDB17 /* star1.png in Resources */,
 				CB77076419322F7200A395B7 /* Default.png in Resources */,
+				CBCA4C93196501570006ACCD /* sharebtn@2x.png in Resources */,
 				CB819FB61941BD2900CB230B /* iTunesArtwork.png in Resources */,
 				CBFF52B31933445F008C6F55 /* buyselbtn.png in Resources */,
 				CB819FB41941BD2900CB230B /* AppIcon76x76.png in Resources */,
@@ -1533,6 +1557,7 @@
 				CBB9A45119301B6C002DDB17 /* TGAlib.m in Sources */,
 				CBB9A35A19301B6B002DDB17 /* CCAnimation.m in Sources */,
 				CBB9A48519301B6D002DDB17 /* aabb.c in Sources */,
+				CBCA4C15196413F40006ACCD /* ShareViewController.m in Sources */,
 				CBB9A3FC19301B6C002DDB17 /* CCTMXObjectGroup.m in Sources */,
 				CBB9A45E19301B6C002DDB17 /* CDAudioManager.m in Sources */,
 				CBB9A40B19301B6C002DDB17 /* CCTransitionProgress.m in Sources */,
@@ -1633,6 +1658,10 @@
 				HEADER_SEARCH_PATHS = "\"onenumber/libs/kazmath/include\"";
 				INFOPLIST_FILE = onenumber/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UMSocial_Sdk_4.0",
+				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1656,6 +1685,10 @@
 				HEADER_SEARCH_PATHS = "\"onenumber/libs/kazmath/include\"";
 				INFOPLIST_FILE = onenumber/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UMSocial_Sdk_4.0",
+				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",

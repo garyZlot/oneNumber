@@ -8,6 +8,7 @@
 
 
 // Import the interfaces
+#import "AppDelegate.h"
 #import "IntroLayer.h"
 #import "MainLayer.h"
 #import "NavigateLayer.h"
@@ -69,11 +70,21 @@
         CCSprite *settingBtn = [CCSprite spriteWithTexture:[[CCTextureCache sharedTextureCache] addImage:@"setting_btn.png"]];
         CCSprite *settingBtnSel = [CCSprite spriteWithTexture:[[CCTextureCache sharedTextureCache] addImage:@"setting_btn.png"]];
         CCMenuItemSprite *settingItem = [CCMenuItemSprite itemWithNormalSprite:settingBtn selectedSprite:settingBtnSel target:self selector:@selector(showSettingScreen)];
-        CCMenu *settingMenu = [CCMenu menuWithItems: settingItem, nil];
-        settingMenu.touchEnabled = YES;
-        settingMenu.position = ccp(30, 30);
-        [self addChild:settingMenu z:1];
-
+        
+        CCSprite *rateBtn = [CCSprite spriteWithTexture:[[CCTextureCache sharedTextureCache] addImage:@"ratebtn.png"]];
+        CCSprite *rateBtnSel = [CCSprite spriteWithTexture:[[CCTextureCache sharedTextureCache] addImage:@"ratebtn.png"]];
+        CCMenuItemSprite *rateItem = [CCMenuItemSprite itemWithNormalSprite:rateBtn selectedSprite:rateBtnSel target:self selector:@selector(openRatePage)];
+        
+        CCSprite *shareBtn = [CCSprite spriteWithTexture:[[CCTextureCache sharedTextureCache] addImage:@"sharebtn.png"]];
+        CCSprite *shareBtnSel = [CCSprite spriteWithTexture:[[CCTextureCache sharedTextureCache] addImage:@"sharebtn.png"]];
+        CCMenuItemSprite *shareItem = [CCMenuItemSprite itemWithNormalSprite:shareBtn selectedSprite:shareBtnSel target:self selector:@selector(openSharePage)];
+        
+        CCMenu *menu = [CCMenu menuWithItems: settingItem, shareItem, rateItem, nil];
+        [menu alignItemsHorizontallyWithPadding:25.0];
+        menu.touchEnabled = YES;
+        //menu.anchorPoint = ccp(0.0, 0.0);
+        menu.position = ccp(85.0, 30.0);
+        [self addChild:menu z:1];
 	}
 	
 	return self;
@@ -227,4 +238,26 @@
         [self unlockLevelPack];
     }
 }
+
+- (void)openRatePage
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", @"itms-apps://itunes.apple.com/cn/app/make-one/id882637207?mt=8"]]];
+}
+
+- (void)openSharePage
+{
+    //NSLog(@"open share page");
+    NSString *textToShare = @"Make One is a ultra high difficult puzzle game. It is cool concept and challenge to your spatial imagination, logic thinking, and patience. http://itunes.apple.com/cn/app/make-one/id882637207?mt=8";
+    NSArray *activityItems = @[textToShare];
+    
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
+    controller.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeCopyToPasteboard, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll,UIActivityTypeAddToReadingList,UIActivityTypePostToFlickr,UIActivityTypePostToVimeo,UIActivityTypeAirDrop];
+    
+    AppController *appController = [[UIApplication sharedApplication] delegate];
+    [appController.navController presentViewController:controller animated:YES completion:nil];
+    
+}
+
+
 @end

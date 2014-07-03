@@ -8,6 +8,9 @@
 
 
 // HelloWorldLayer
+
+#import "ShareViewController.h"
+
 @interface IntroLayer : CCLayer
 {
     CCTexture2D *packagebtnbgTex;
