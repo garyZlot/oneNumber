@@ -23,7 +23,6 @@
 
 #pragma mark - HelloWorldLayer
 
-// HelloWorldLayer implementation
 @implementation MainLayer
 
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.

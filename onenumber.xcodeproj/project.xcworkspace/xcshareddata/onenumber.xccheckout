@@ -10,29 +10,29 @@
 	<string>onenumber</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1945466D-3766-49B6-9B2F-3A580CDED066</key>
+		<key>E79A278AE93BB7DA13BAF4531619AB929206FCBF</key>
 		<string>https://bitbucket.org/garyZlot/onenumber.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>onenumber.xcodeproj/project.xcworkspace</string>
+	<string>onenumber.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1945466D-3766-49B6-9B2F-3A580CDED066</key>
+		<key>E79A278AE93BB7DA13BAF4531619AB929206FCBF</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://bitbucket.org/garyZlot/onenumber.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1945466D-3766-49B6-9B2F-3A580CDED066</string>
+	<string>E79A278AE93BB7DA13BAF4531619AB929206FCBF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1945466D-3766-49B6-9B2F-3A580CDED066</string>
+			<string>E79A278AE93BB7DA13BAF4531619AB929206FCBF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>onenumber</string>
 		</dict>
